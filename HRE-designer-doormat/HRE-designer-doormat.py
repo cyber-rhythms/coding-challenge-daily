@@ -1,7 +1,5 @@
 if __name__ == "__main__":
-    N = int(input())
-    M = int(input())
-
+    M, N = map(int, input().split())
     num_top_lines = int((N - 1) / 2)
 
     for i in range(num_top_lines):
