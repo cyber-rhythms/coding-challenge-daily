@@ -1,5 +1,18 @@
 import os
 
+# Define template for code review in the .py script.
+py_template = """# Submission.
+
+\"\"\"
+Code Review.
+
+Strengths:
+Deficiencies:
+Remarks:
+Solution:
+\"\"\"
+"""
+
 if __name__ == "__main__":
     try:
         name = input("Good to see you're back for another round. Slow and steady. Now input name of the folder, scripts and notebook for creation: ")
@@ -18,6 +31,8 @@ if __name__ == "__main__":
             pass
 
         with open(py_path, "w") as f:
+            f.write(py_template)
             pass
+        
     except KeyboardInterrupt:
         print("\n Operation cancelled. Exiting.")

@@ -18,6 +18,8 @@ def queue_time(customers, n):
         return queue_time
     
 # Code review.
+# For now note the following use of min with `key=iterable.__get__item`.
+# Can also use `heapq` - but finish your DSA study first then we can get there.
 
 def queue_time(customers, n):
     tills = [0] * n
