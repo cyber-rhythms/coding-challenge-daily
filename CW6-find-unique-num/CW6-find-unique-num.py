@@ -1,7 +1,7 @@
 # Submission.
 
 from collections import Counter
-def find_uniq(arr)
+def find_uniq(arr):
     counter = Counter(arr)
 
     for key in counter:

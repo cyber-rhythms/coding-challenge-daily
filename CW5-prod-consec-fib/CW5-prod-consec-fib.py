@@ -16,10 +16,10 @@ def prod_fib(ref):
 # Code review.
 
 # When submitting make sure to refactor any list comprehensions which you are using to track state, as they are O(n) memory-wise.
-# And notice how much cleaner and more surgically thi can be achieved with simple tuple unpacking.
+# And notice how much cleaner and more surgically this can be achieved with simple tuple unpacking.
 
 def prod_fib(ref):
     a, b = 0, 1
     while a * b < ref:
         a, b = b, a + b
-    return [a, b, prod == a * b]
+    return [a, b, ref == a * b]
