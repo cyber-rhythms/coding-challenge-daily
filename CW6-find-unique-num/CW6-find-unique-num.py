@@ -28,14 +28,13 @@ Solution:
 -  3. Unique element further down the list [B, B, B,..., A,...]
 - 1 and 2. wrapped into an early exit guard clause, an edge case where unique value is in the first two slots. 
 - 3. covered by linear search.
-
 """
 
 def find_uniq(arr):
 
     # Edge case early exit where unique value is in first two positions of the array.
     if arr[0] != arr[1]:
-        return arr[0] if arr[0] != arr[2] else arr[2]
+        return arr[0] if arr[0] != arr[2] else arr[1]
     
     # If we get here then arr[0] is the common number.
     common = arr[0]

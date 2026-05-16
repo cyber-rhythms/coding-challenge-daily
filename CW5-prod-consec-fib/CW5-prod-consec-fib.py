@@ -13,10 +13,22 @@ def prod_fib(ref):
 
     return [fib[-1], fib[-2], prod == ref]
 
-# Code review.
+"""
+Code Review.
 
-# When submitting make sure to refactor any list comprehensions which you are using to track state, as they are O(n) memory-wise.
-# And notice how much cleaner and more surgically this can be achieved with simple tuple unpacking.
+Strengths: 
+
+Deficiencies:
+- $O(n)$ space complexity for a single query kata.
+
+Remarks:
+- Now you've covered some DSA - the solution below compared with yours is a
+classic example of space time complexity trade off.
+- Your space complexity is $O(n)$, whereas solution below is space complexity O(1).
+- All depends on how many queries you need - for this kata, solution below is better.
+
+Solution:
+"""
 
 def prod_fib(ref):
     a, b = 0, 1
