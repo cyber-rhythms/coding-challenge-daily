@@ -44,8 +44,7 @@ Remarks:
 
 Solution:
 - For this problem, we can make use of the slicing with customised steps `text[start:stop:step]`, meaning we save on O(n) time and space of creating index arrays.
-- text[1::2]` grabs all the odd-indexed elements, and `text[::2]` the evens!
-- Also note that joining on 
+- text[1::2]` grabs all the odd-indexed elements, and `text[::2]` the evens! 
 """
 
 def encrypt(text, n):
