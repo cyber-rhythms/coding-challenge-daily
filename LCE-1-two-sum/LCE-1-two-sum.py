@@ -14,7 +14,7 @@ class Solution:
         return []
 
 """
-Code Review - see notebook.
+Code Review - see accompanying notebook, as conceptual jump is not trivial.
 
 Strengths:
 Deficiencies:
