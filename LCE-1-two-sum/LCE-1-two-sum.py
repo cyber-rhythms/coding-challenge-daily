@@ -1,5 +1,6 @@
 # Submission.
-# Can only see an $O(n^2 / 2) = O(n^2)$ time, $O(1)$ space brute-force solution for this. - write it out first then review.
+# https://leetcode.com/problems/two-sum/description/
+# $O(n^2 / 2) = O(n^2)$ time, $O(1)$ space brute-force solution for this.
 
 class Solution:
     def brute_twoSum(self, nums: list[int], target: int) -> list[int]:
@@ -14,13 +15,14 @@ class Solution:
         return []
 
 """
-Code Review - see accompanying notebook, as conceptual jump is not trivial.
+Code Review - see accompanying notebook, as conceptual jump not trivial
 
 Strengths:
 Deficiencies:
 Remarks:
 Solution:
 """
+# O(n) time, O(n) space hash-map solution.
 
 class Solution:
     def twoSum(self, nums: list[int], target: int) -> list[int]:
@@ -28,7 +30,7 @@ class Solution:
         for index, num in enumerate(nums):
             complement = target - num
 
-            # O(1) lookup of complement in hash-map rather than an O(n) backwards linear search. 
+            # O(1) lookup of complement in hash-map rather than an O(n) backwards linear search for complement.
             if complement in hash_map:
                 index_2 = hash_map[complement]
                 return [index, index_2]
